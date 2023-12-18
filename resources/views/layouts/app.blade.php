@@ -17,6 +17,12 @@
 
 <body>
 
+    <header class="d-flex justify-content-around fs-3 p-5">
+        <a href={{route('home')}}>homepage</a>
+        <a href={{route('comics.index')}}>Comics</a>
+        <a href={{route('comics.create')}}>Aggiungi nuovo</a>
+    </header>
+
     <main class="bg-light">
         @yield('content')
     </main>
