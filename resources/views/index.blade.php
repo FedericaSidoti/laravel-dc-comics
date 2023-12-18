@@ -1,9 +1,9 @@
-@extends('layouts.app')
+@extends('layouts.app');
 
 @section('title')
-    Home
 @endsection
 
 @section('content')
-    <h1>Homepage</h1>
+    
+    <a href="{{route(comics.index)}}"> vai ai Comics</a>
 @endsection
