@@ -12,7 +12,7 @@
             <div class="col-5 fs-4">
                 <ul>
                     <li>Descrizione: {{$comic->description}}:</li>
-                    <li>Prezzo: {{$comic->price}}</li>
+                    <li>Prezzo: $ {{$comic->price}}</li>
                     <li>Serie: {{$comic->series}}</li>
                     <li>Data di rilascio: {{$comic->sale_date}}</li>
                     <li>Genere: {{$comic->type}}</li>

@@ -4,11 +4,11 @@
     <div class="container">
         <div class="row">
             <h2>Aggiungi un fumetto</h2>
-            <form class="d-flex flex-column fs-4 form " method="POST"> @csrf
+            <form action="{{route('comics.store')}}" class="d-flex flex-column fs-4 form " method="POST"> @csrf
                 <input type="text" name="title" placeholder="Inserisci il titolo">
                 <input type="text" name="thumb" placeholder="Inserisci l'url della thumb">
                 <input type="text-area" name="description" placeholder="Inserisci la descrizione">
-                <input type="text" name="price" placeholder="Inserisci il prezzo">
+                <input type="number" name="price" placeholder="Inserisci il prezzo">
                 <input type="text" name="series" placeholder="Inserisci la serie">
                 <input type="text" name="title" placeholder="Inserisci il titolo">
                 <label for="sale-date">Data di vendita</label>

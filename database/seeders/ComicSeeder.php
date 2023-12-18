@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Comic;
+use Illuminate\Support\Str;
 
 class ComicSeeder extends Seeder
 {
@@ -228,11 +229,14 @@ class ComicSeeder extends Seeder
         ];
 
         foreach($comics as $comic) {
+            
+            $price = Str::remove('$', $comic['price']);  
+
             $newComic = new Comic; 
             $newComic->title = $comic['title'];
             $newComic->description = $comic['description'];
             $newComic->thumb = $comic['thumb'];
-            $newComic->price = $comic['price'];
+            $newComic->price = $price;
             $newComic->series = $comic['series'];
             $newComic->sale_date = $comic['sale_date'];
             $newComic->type = $comic['type'];

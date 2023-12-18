@@ -21,4 +21,9 @@ class ComicController extends Controller
 
         return view('comics.create');
     }
+
+    public function store(Request $request) {
+        $data= $request->all();
+        dd($data);
+    }
 }
