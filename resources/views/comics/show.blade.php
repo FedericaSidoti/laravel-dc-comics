@@ -9,7 +9,7 @@
             <div class="col-7">
                 <img src="{{$comic->thumb}}">
             </div>
-            <div class="col-5">
+            <div class="col-5 fs-4">
                 <ul>
                     <li>Descrizione: {{$comic->description}}:</li>
                     <li>Prezzo: {{$comic->price}}</li>
