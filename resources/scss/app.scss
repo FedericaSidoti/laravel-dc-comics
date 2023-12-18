@@ -1,1 +1,12 @@
 @import '~bootstrap/scss/bootstrap';
+
+.thumb-img {
+    width: 230px; 
+    height: 250px; 
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+}
