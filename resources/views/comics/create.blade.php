@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <h2>Aggiungi un fumetto</h2>
-            <form class="d-flex flex-column fs-4 form " > @csrf
+            <form class="d-flex flex-column fs-4 form " method="POST"> @csrf
                 <input type="text" name="title" placeholder="Inserisci il titolo">
                 <input type="text" name="thumb" placeholder="Inserisci l'url della thumb">
                 <input type="text-area" name="description" placeholder="Inserisci la descrizione">
