@@ -13,7 +13,8 @@
                 <div class="card d-flex justify-content-center align-items-center">
                     <h4>  {{$comic->title}} </h4>
                     <img class="thumb-img" src="{{$comic->thumb}}">
-                    <a href="{{route('comics.show', $comic->id)}}" role="button" class="btn btn-primary fs-3"> Scopri di più</a>
+                    <a href="{{route('comics.show', $comic->id)}}" role="button" class="btn btn-primary mb-1"> Scopri di più</a>
+                    <a href="{{route('comics.edit', $comic->id)}}" role="button" class="btn btn-primary"> Modifica</a>
                 </div>
                 
             </div>

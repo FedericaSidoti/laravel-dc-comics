@@ -10,7 +10,6 @@
                 <input type="text-area" name="description" placeholder="Inserisci la descrizione">
                 <input type="number" name="price" placeholder="Inserisci il prezzo">
                 <input type="text" name="series" placeholder="Inserisci la serie">
-                <input type="text" name="title" placeholder="Inserisci il titolo">
                 <label for="sale-date">Data di vendita</label>
                 <input type="date" name="sale_date" placeholder="Inserisci la data di vendita">
                 <input type="text" name="type" placeholder="Inserisci il genere">
