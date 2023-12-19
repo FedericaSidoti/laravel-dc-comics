@@ -11,7 +11,7 @@
         <div class="row">
             @foreach ($comics as $comic)
             {{-- Modale --}}
-            <div class="modal fade" id="exampleModal-{{$comic->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="modal-{{$comic->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -41,7 +41,7 @@
                         <a href="{{route('comics.show', $comic->id)}}" role="button" class="btn btn-primary me-1"> Scopri di più</a>
                         <a href="{{route('comics.edit', $comic->id)}}" role="button" class="btn btn-primary me-1"> Modifica</a>
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-{{$comic->id}}">
+                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modal-{{$comic->id}}">
                         Elimina
                         </button>
                     </div>
