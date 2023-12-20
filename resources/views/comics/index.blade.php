@@ -33,8 +33,8 @@
                 </div>
                 </div>
                 {{-- Fine modale --}}
-            <div class="col-3">
-                <div class="card d-flex justify-content-center align-items-center">
+            <div class="col-3 p-2">
+                <div class="card h-100 d-flex justify-content-center align-items-center border-primary">
                     <h4>  {{$comic->title}} </h4>
                     <img class="thumb-img" src="{{$comic->thumb}}">
                     <div class="d-flex">
